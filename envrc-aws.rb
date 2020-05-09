@@ -11,7 +11,7 @@ class EnvrcAws < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    system "go", "build", "/cmd/envrc-aws/main.go", *std_go_args
+    system "go", "build", *std_go_args, "cmd/envrc-aws/main.go"
   end
 
   test do
